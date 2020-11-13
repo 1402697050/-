@@ -1,0 +1,11 @@
+<image mode='widthFix' bindtap="previewImage" src="{{fileID}}"></image>
+<view > 
+  详细地址：{{place}}
+  <rich-text bindinput="getplace" ></rich-text>
+</view>
+<view> 详细描述：
+  <text bindinput="getcomments">{{comments}}</text>
+</view>
+
+
+

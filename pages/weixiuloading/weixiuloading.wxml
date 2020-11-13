@@ -1,0 +1,39 @@
+<!--miniprogram/pages/weixiuloading/weixiuloading.wxml-->
+<view class=".container" style="/assets/bg.jpg">
+  <image src="/images/weixiugong.png" class="header"></image>
+  <view class="loginPane">
+    <form bindsubmit="_handlerSubmit">
+    <view class="formItem">
+      <text class=".iconfont .icon-Account"></text>
+      <input name="accountV" class="account" placeholder="请输入账号" bindinput="_handlerAccountInput"></input>
+      <icon type="{{isGood?'success':'warn'}}"></icon>
+    </view>
+
+    <view class="formItem">
+      <text class=".iconfont .icon-password"></text>
+      <input name="passwordV" class="password" password placeholder="请输入密码" bindinput="_handlerPwdInput"></input>
+    </view>
+
+    <view class="spaceBetween formItem">
+      <checkbox-group name="rememberPwdV" bindchange="_handlerRememberPwd">
+        <checkbox value="1" checked="{{rememberPwd}}">记住密码</checkbox>
+      </checkbox-group>
+
+      <checkbox-group name="autoLoginV" bindchange="_handlerAutoLogin">
+        <checkbox value="1" checked="{{autoLogin}}">自动登录</checkbox>
+      </checkbox-group>
+    </view>
+
+    <view class="formItem">
+      <navigator open-type="switchTab" url="/pages/weichuli/weichuli" hover-class="navigator-hover">
+      <button type="primary" class=".loginBtn" form-type="submit" disabled="{{!canLogin}}">登 陆</button>
+      </navigator>
+    </view>
+
+    <view class="formItem">
+      <button class=".registerBtn">注 册</button>
+    </view>
+  </form>
+  </view>
+
+</view>

@@ -1,0 +1,13 @@
+<view>
+    <view class="images clearfix">
+        <view class="list-content">
+            <block wx:for="{{photo}}" wx:key="index">
+                <block wx:if="{{item.checkValue == '未处理'}}">
+                    <view class="pic" data-index="{{index}}" bindtap="todetail" bindlongpress="removeImage">
+                        <image src="{{item.fileID}}" class="image" mode="aspectFill"></image>
+                    </view>
+                </block>
+            </block>
+        </view>
+    </view>
+</view>

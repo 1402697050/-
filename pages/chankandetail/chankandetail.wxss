@@ -1,0 +1,41 @@
+image {
+  width: 100%;
+}
+.rich-text{
+  height: 50px;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-right: 10px;
+  border-left: 10px;
+  border-width: 10px;
+  border-bottom: 10px;
+  border-top: 10px;
+  border-color: rgb(6, 41, 41);
+}
+.text{
+  height: 50px;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-right: 10px;
+  border-left: 10px;
+  border-width: 10px;
+  border-bottom: 10px;
+  border-top: 10px;
+  border-color: rgb(6, 41, 41);
+}
+
+button {
+  border-radius: 0 !important;
+}
+
+.view{
+  height: 50px;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-right: 10px;
+  border-left: 10px;
+  border-width: 10px;
+  border-bottom: 10px;
+  border-top: 10px;
+  border-color: rgb(6, 41, 41);
+}

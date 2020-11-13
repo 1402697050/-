@@ -1,0 +1,50 @@
+{
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/weichuli/weichuli",
+        "text": "未处理",
+        "iconPath": "images/未处理.png",
+        "selectedIconPath": "images/未处理.png"
+      },
+      {
+        "pagePath": "pages/zaichuli/zaichuli",
+        "text": "正在处理",
+        "iconPath": "images/正在处理.png",
+        "selectedIconPath": "images/正在处理.png"
+      },
+      {
+        "pagePath": "pages/yichuli/yichuli",
+        "text": "已处理",
+        "iconPath": "images/已处理.png",
+        "selectedIconPath": "images/已处理.png"
+      },
+      {
+        "pagePath": "pages/shenqing/shenqing",
+        "text": "申请",
+        "iconPath": "images/申请.png",
+        "selectedIconPath": "images/申请.png"
+      }
+    ]
+  },
+
+  "pages": [
+    "pages/loadPage/loadPage",
+    "pages/weixiuloading/weixiuloading",
+    "pages/yichuli/yichuli",
+    "pages/zaichuli/zaichuli",
+    "pages/weichuli/weichuli",
+    "pages/chakan/chakan",
+    "pages/chankandetail/chankandetail",
+    "pages/shenqing/shenqing",
+    "pages/userdetail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "报修统计界面",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap83.json"
+}

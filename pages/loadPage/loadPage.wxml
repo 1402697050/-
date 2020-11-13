@@ -1,0 +1,11 @@
+<!--miniprogram/pages/loadPage/loadPage.wxml-->
+  <view class=".container">
+    <navigator open-type="switchTab" url="/pages/weichuli/weichuli" hover-class="navigator-hover" bindtap='yonghu'>
+      <button class=".btn">申请报修</button>
+    </navigator>
+    <navigator url="/pages/weixiuloading/weixiuloading" hover-class="navigator-hover" bindtap="guanliyuan">
+      <button class=".btn">维修人员登录</button>
+    </navigator>
+  </view>
+
+

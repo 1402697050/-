@@ -1,0 +1,20 @@
+<view >
+    <view class="images clearfix">
+        <view class="list-content">
+            <block wx:for="{{photo}}" wx:key="index">
+                <block wx:if="{{item.checkValue == '未处理'}}">
+                    <block wx:if="{{globalData == '用户'}}">
+                        <view class="pic" data-index="{{index}}" bindtap="tochakan" >
+                            <image src="{{item.fileID}}" class="image" mode="aspectFill"></image>
+                        </view>
+                    </block>
+                    <block wx:if="{{globalData == '管理员'}}">
+                        <view class="pic" data-index="{{index}}" bindtap="todetail" bindlongpress="removeImage">
+                            <image src="{{item.fileID}}" class="image" mode="aspectFill"></image>
+                        </view>
+                    </block>
+                </block>
+            </block>
+        </view>
+    </view>
+</view>
